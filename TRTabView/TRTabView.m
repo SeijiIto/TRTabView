@@ -865,7 +865,7 @@ sets the variables from which self.overflows is dynamically calculated.*/
 - (IBAction)overflowAction:(TRTab *)tab {
 	
 	[self.overflowTable reloadData];
-	self.overflowPopover.popoverContentSize = CGSizeMake(320, [self.overflowTable numberOfRowsInSection:kOverflowTabSection] * self.overflowTable.rowHeight);
+	self.overflowPopover.popoverContentSize = CGSizeMake(320, [self.overflowTable numberOfRowsInSection:kOverflowTabSection] * 44.0);
 	[self.overflowPopover presentPopoverFromRect:tab.overflowButton.frame inView:tab permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 	[self.overflowTable flashScrollIndicators];
 }
